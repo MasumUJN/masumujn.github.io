@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
 
 :root {
     /* Body styles */
@@ -194,27 +195,42 @@ header {
     line-height: 150%;
 }
 
-.education-container {
+.splitted-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: -20px;
-    line-height: 10px;
-    /* background-color: #dbdbdb; */
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .splitted-container {
+        margin-left: 0;
+    }
 }
 
 .left {
     flex: 1;
-    /* Take up remaining space */
+    margin: 15px 0;
 }
 
 .right {
+    flex: 0.4;
     text-align: right;
+    margin: 15px 0;
 }
 
-.degree {
+.name {
     font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+.chinese {
+    font-family: "Noto Serif SC", serif;
 }
