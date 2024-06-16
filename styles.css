@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Body styles */
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.header {
+    background-color: #fff;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.intro-text {
+    max-width: 50%;
+    /* Adjust max-width for better spacing */
+}
+
+
+.intro-text h1 {
+    font-size: 2.5em;
+    /* Larger font size */
+    margin: 0;
+    /* font-family: "Poppins", sans-serif; */
+}
+
+.intro-text p {
+    font-size: 1.2em;
+}
+
+.buttons {
+    opacity: 0;
+    margin-top: 30px;
+}
+
+.rounded-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 7.5px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    /* Darker text color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.rounded-btn:hover {
+    background-color: #eae8e6;
+    color: #333;
+}
+
+
+.intro-image {
+    max-width: 40%;
+    /* Adjust max-width for better spacing */
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    /* Move the image slightly to the left */
+}
+
+.profile-pic {
+    display: block;
+    border-radius: 15px;
+    /* Slightly rounded corners */
+    width: 250px;
+    /* Adjust image size */
+    height: 250px;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.profile-pic.loaded {
+    opacity: 1;
+}
+
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        height: 100vh;
+        /* Full screen height for mobile */
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-image {
+        order: -1;
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .intro-text {
+        max-width: 100%;
+    }
+
+    .intro-text h1 {
+        font-size: 2em;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    .rounded-btn {
+        margin-right: 5px;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+header {
+    background-color: transparent;
+    color: #fff;
+    /* Initial text color (white) */
+    padding: 15px 0;
+    text-align: left;
+    opacity: 1;
+    border-bottom: 1.5px solid #333;
+    /* Border at the bottom, white color */
+}
+
+.header-content {
+    max-width: 1000px;
+}
+
+.logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: "Kalam", cursive;
+    transition: color 1s ease;
+}
+
+.logo:hover {
+    color: #787878;
+}
+
+.heading {
+    line-height: 150%;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-top: -20px;
+    line-height: 10px;
+    /* background-color: #dbdbdb; */
+}
+
+.left {
+    flex: 1;
+    /* Take up remaining space */
+}
+
+.right {
+    text-align: right;
+}
+
+.degree {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
